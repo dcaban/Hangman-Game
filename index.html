@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Southpark Hangman</title>
+        
+         <!-- Bootstrap config files -->
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+            <!-- local css file -->
+            <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    </head>
+<body>
+    
+<!--header of page-->
+    <div style="background-color:sea;" class="containter mainCont text-center"> 
+        <div class="row">
+
+            <div style="background-color:#88d4e2!important;" class="jumbotron col-lg-12 col-md-12 col-sm-12 col-sx-12">
+            <img src="assets/images/sign.png" style="width:170px;height:170px;">
+                <h1>Hangman</h1>
+            </div>
+        </div>
+    
+<!--Box where the game takes place-->
+      
+    <div tyle="background-color: seagreen!important;" class="container">    
+        <div class="row">
+            <div class="col-lg-8" id="gamebox" style="border: 2px solid lightgrey;">
+                <h1>Press A Key To Guess!</h1>
+                <br>
+                
+<!--keeps track of wins and losses-->
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+<!--                    use id win in javascript to change number-->
+                    <h3 style="display: inline;">Wins: </h3><h3 style="display: inline;" id="win">0</h3>
+                </div>
+                <div class="col-lg-6 col-md-6">
+<!--                    use id loss in javascript to change number-->
+                    <h3 style="display: inline;">Losses: </h3><h3 style="display: inline;" id="win">0</h3>
+                    </div>
+            
+<!--     area which correct gueesed letters go-->
+             <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <h2 class="to-fill" id="current-word" style="letter-spacing: 8px;"></h2>
+                            </div>
+                        </div>
+                
+<!--    remaining guesses-->
+                <div class="row">
+                            <div class="col-lg-6 col-md-8">
+                                <h3>Guesses Remaining: </h3>
+                            </div>
+                            <div class="col-lg-6 col-md-4">
+                                <h3 id="guesses-left">12</h3>
+                            </div>
+                        </div>
+                <!-- Letter that have been played -->
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h3>Letters Played: </h3>
+                            </div>
+                        </div>
+               <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <h2 class="to-fill" id="current-word" style=" letter-spacing: 8px;"></h2>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                        
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8">
+                                <h3>Guesses Remaining: </h3>
+                            </div>
+                            <div class="col-lg-6 col-md-4">
+                                <h3 id="guesses-left">12</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Letters Tried HEADER -->
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h3>Letters Tried: </h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Letters Tried fill in -->
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h2 class="to-fill" id="used-letters"></h2>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+                <div class="col-lg-4 text-center" style="padding-top:20px;">
+                    <img src="assets/images/butters.png" style="max-height: 400px;">
+                </div>
+                </div>
+            </div>
+    </div>
+            
+    
+        <script src="assets/javascript/scripts.js"></script>  
+            
+            
+        
+    
+    </body>
+</html>
